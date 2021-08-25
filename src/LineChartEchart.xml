@@ -4,7 +4,22 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Line Chart Echart</name>
     <description>My widget description</description>
-    <icon/>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAIAAAC1eHXNAAAAAXNSR0IArs4c6QAA
+AARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAASdEVYdFNvZnR3
+YXJlAEdyZWVuc2hvdF5VCAUAAAJzSURBVFhH7dPfT1JhGAfw9y8Ut+68qItCl23p
+VhfatPKiGU2WqzViFkEpViMBW5ml8SOIQMUsZ5IppNkwAVEPZr+gZ54n4nB+4zlw
+LvjsjL3f5z28fOEMslUiUzskKwY7qoxsVwprKoTsaAPZ1QZCaQPJaQPZ0wbyvVJ4
+gELIPhN+SNWV96gV8oOlQW/xhpYwVAv5ydKgvzPonIYF3lIVQj2UAgeeu/IEAw/y
+i0UHPVwzGA6t3+KHA13P5zHzULfHuw/rcFqvaRIzP/KbRddsHXJHMRwOHHX0zP34
+Whozv0p6xNdSVG4fA7/LNz1w1FPPAmZB5M8/OBDrkd3Za+9xt/W401sUjrhE5j7D
+OX0DPsxi/vco0jXb7KNRDCxmewhugOtC/wsccYEbjnc41pNZzGLk9fCHl2H36m2/
+5WEEFvBfwA0mgxmeiG0i8BGzBDJ6bGao1m5nU/swHY0DPrjT+miKjkWvIiswv2YN
+YJaG5FkaW6DHLIYS121B2JqPJTHn81194zAZnVjAfAAmJ7tHNtMUZmmk9pgMLsF8
+0BXFfCCdzZ0674R5cDpBTwxmL0RfeIWO0knq8XVjW9/pgIeCucSnRKqpzX6k9d7i
+8rfAVBzeaxoK4Z4cknoYb/lhuJHaxcwUmVuF3RMdDng9fdENf2zckEO8x5h3ESbP
+fDHMXGAX7oHr9Qw+ILlEeiS+ZI6dfdBpGKOjAHhL2a8oi0iPXpMHIr1WFSmwNLbc
+HX78FhbvY0lYv5ldpeeqEuoBigu1ifSoGm336DKOK34JfzeOHmZ7uOwIRa5LN17i
+B3Dh6FET9R5M9R5M9R5M9R5M2uhRKPwFamVeAD/f+7MAAAAASUVORK5CYII=</icon>
     <properties>
     <!-- 自定义配置属性 基本属性配置 -->
         <propertyGroup caption="General">

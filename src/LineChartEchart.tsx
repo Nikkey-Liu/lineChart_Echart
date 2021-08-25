@@ -1,7 +1,7 @@
 import React, { Component, ReactNode, createElement } from "react";
 //import { HelloWorldSample } from "./components/HelloWorldSample";
 import deepMerge from "deepmerge";
-import "../node_modules/echarts/dist/echarts";
+import "../node_modules/echarts/dist/echarts.js";
 
 import EChartsReact from "echarts-for-react";
 import { LineChartEchartContainerProps, MyObjectType } from "../typings/LineChartEchartProps";
@@ -241,7 +241,8 @@ export default class LineChartEchart extends Component<LineChartEchartContainerP
                 type: this.legendType,
                 orient: this.props.ShowLegendWay,
                 left: "left",
-                show: this.props.ShowLegend
+                show: this.props.ShowLegend,
+                top: "8%"
             },
             toolbox: {
                 feature: {
