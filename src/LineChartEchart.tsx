@@ -1,7 +1,7 @@
 import React, { Component, ReactNode, createElement } from "react";
 //import { HelloWorldSample } from "./components/HelloWorldSample";
 import deepMerge from "deepmerge";
-import "../node_modules/echarts/dist/echarts.js";
+
 
 import EChartsReact from "echarts-for-react";
 import { LineChartEchartContainerProps, MyObjectType } from "../typings/LineChartEchartProps";
