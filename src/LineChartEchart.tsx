@@ -49,6 +49,8 @@ export default class LineChartEchart extends Component<LineChartEchartContainerP
     // }
 
     componentDidUpdate() {
+        //this.componentWillUnmount();
+        this.clearData();
         let numberObject = 0;
         //数据加载状态更新
         this.props.myObject.forEach(item => {
@@ -102,12 +104,19 @@ export default class LineChartEchart extends Component<LineChartEchartContainerP
         this.countSeries = 0;//归零Line计数
 
     }
-    componentWillUnmount() {
+    clearData(){
         while (this.seriesName.length) {
             this.seriesName.pop();
+        }
+        while (this.seriesList.length){
             this.seriesList.pop();
+        }
+        while (this.datasetList.length){
             this.datasetList.pop();
         }
+    }
+    componentWillUnmount() {
+       this.clearData();
     }
     //第一种方式dimension的方式设置dataset来解决不同x 轴line 的问题
     getDataSetByDimension(item: MyObjectType, sortFlag: boolean) {
@@ -354,19 +363,25 @@ export default class LineChartEchart extends Component<LineChartEchartContainerP
         return myDivStyle;
     }
     onChartClick(e:any) {
- 
+       
         console.log("echarts on click"+e.seriesName);
         if(this.lineNameToAction.has(e.seriesName)){
+            
+            
             this.lineNameToAction.get(e.seriesName).execute();
+            //this.componentWillUnmount();
             console.log("echarts on click execute inform ：如果想点击显示的数据请在外部配置dataview来显示，目前widget执行微流不支持传递参数");
         }
  
       
     }
     onChartLegendselectchanged() {
+        
         console.log("legendSlectchanged");
         if (this.props.onChartLegendselectchanged != null && this.props.onChartLegendselectchanged.canExecute) {
+       
             this.props.onChartLegendselectchanged.execute();
+           // this.componentWillUnmount();
         }
     }
     render(): ReactNode {
@@ -374,6 +389,7 @@ export default class LineChartEchart extends Component<LineChartEchartContainerP
             ref={e => {
                 this.echartsReact = e;
             }}
+           
             option={this.getOption()}
             showLoading={this.props.showLoading} // 获得是否显示loading动画
             style={this.renderSizeOfDiv()}
